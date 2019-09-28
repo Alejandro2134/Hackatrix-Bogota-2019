@@ -4,19 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/Estilos_Usuario.css">
   <title>Usuario</title>
+
+  <meta charset="utf-8">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <!--Bootstrap 4 -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/diseñoIndex.css">
+    <!-- Custom CSS -->
+
+    <title>Voitea</title>
+
+    
 </head>
 
-<body>
-  <% include ../partials/header%>
+<body class="cabecera-principal">
 
+ <!--Navegacion-->
+ <% include ../partials/header%>
+  <br></br>
+  <div class="Arriba">
 
+    <h2 class="blanco">Describenos tu caso</h2>
+  </div>
+  <br></br>
+  <form class="Formulario" method="GET" action="../abogado">
+
+    
+    <div class="form-group">
+        <textarea name="formulario" rows="20" cols="100" placeholder="Escriba su caso..."></textarea>
+    </div>
+
+ 
+    <div class="btn-form">
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-danger">Limpiar</button>
+    </div>
+  </form>
+
+  
+  <style>
+  
+    .Formulario{
+      text-align: center;
+
+    }
+    .Arriba {
+      text-align: center;
+    }
+
+    .Botones {
+      text-align: center;
+    }
+  </style>
 
 
   <% include ../partials/footer%>
-  
+
+
   <!-- Bootstrap JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
+

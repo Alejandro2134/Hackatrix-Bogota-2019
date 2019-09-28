@@ -26,3 +26,7 @@
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
     background: linear-gradient(to right, #2F80ED, #56CCF2);
   }
+
+  .blanco {
+    color: #fff;
+  }
