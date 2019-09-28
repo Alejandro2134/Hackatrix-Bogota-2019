@@ -1,3 +1,7 @@
+body{
+  background: #000;
+}
+
 .descripcionProyecto{
 float:left;
 position: relative;
