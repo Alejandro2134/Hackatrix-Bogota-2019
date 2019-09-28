@@ -12,4 +12,8 @@ router.get("/usuario", (req, res) => {
   res.render('pages/usuario')
 })
 
+router.get("/header", (req,res) => {
+  res.render('pages/partials/header')
+})
+
 module.exports = router;
