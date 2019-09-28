@@ -18,6 +18,7 @@ app.use(cookieParser())
 app.use(bodyParser.urlencoded({
   extended: false
 }))
+app.use(express.static(__dirname + 'views/pages/css'));
 app.use(bodyParser.json())
 app.use(session({
   secret: 'cats',
