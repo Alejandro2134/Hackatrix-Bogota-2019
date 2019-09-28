@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Ingresar Usuario</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="diseñoIndex.css">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <!--Bootstrap 4 -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/diseñoIndex.css">
+    <!-- Custom CSS -->
+
+    <title>Voitea</title>
   </head>
   <body>
-    <br>
-    <div class="contenedorInicio">
-      <div class="descripcionProyecto">
-        <p>
-          Aplicativo web de consultoria legal gratuita, para todas las personas
-          que necesiten una ayuda rápida, eficiente y de calidad en sus problemas
-          jurídicos y que no tengan los recursos necesarios para contratar un
-          especialista, las personas expondrán sus casos en la plataforma y
-          quedarán a la espera a que algún asesor (abogado y/o estudiante) tome
-           el caso de acuerdo a su experiencia y conocimientos. Al asesor se le
-           notificarán los casos disponibles y decidirá que caso tomar. Luego
-           se creará un canal de comunicación entre el usuario y el asesor, para
-            realizar la consultoria, al finalizar la asesoría el usuario dará
-             una calificación de acuerdo a la utilidad de la información
-             proporcionada por el asesor.
-        </p>
+  <!--Navegacion-->
+  <% include ../partials/header%>
+    <!-- Cabecera -->
+    <header class="cabecera-principal">
+      <div class="background text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <h1>Voitea</h1>
+
+              <p>Aplicativo web de consultoria legal gratuita, para todas las personas
+                que necesiten una ayuda rápida, eficiente y de calidad en sus problemas
+                jurídicos y que no tengan los recursos necesarios para contratar un
+                especialista, las personas expondrán sus casos en la plataforma y
+                quedarán a la espera a que algún asesor (abogado y/o estudiante) tome
+                el caso de acuerdo a su experiencia y conocimientos. Al asesor se le
+                notificarán los casos disponibles y decidirá que caso tomar. Luego
+                se creará un canal de comunicación entre el usuario y el asesor, para
+                realizar la consultoria, al finalizar la asesoría el usuario dará
+                una calificación de acuerdo a la utilidad de la información
+                proporcionada por el asesor.  </p>
+            </div>
+
+            <div class="col-md-6">
+              <form class="form-reg" method="POST">
+
+                <h3>Nombre De Usuario</h3>
+                <div class="form-group">
+                  <input name="userAdmin" type="text" class="form-control" placeholder="Ingrese nombre de usuario" required>
+                </div>
+        
+                <h3>Contraseña</h3>
+                <div class="form-group">
+                  <input name="contraseñaAdmin" type="password" class="form-control" placeholder="Ingrese contraseña" required>
+                </div>
+      
+                <div class="btn-form">
+                  <button type="submit" class="btn btn-warning "><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+                  <button type="reset" class="btn btn-warning">Limpiar Campos</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="ingresoUsuario">
-        <center>
-          <form class="login" action="index.html" method="get">
-              <p>Nombre Usuario: <input type="text" name="nombreUsuario" value=""> </p>
-              <br>
-              <p>Contraseña: <input type="text" name="contrasenaUsuario" value=""></p>
-              <br>
-              <center><input type="submit" name="enviarDatos" value="Ingresar"></center>
-          </form>
-        </center>
-      </div>
-    </div>
+    </header>
+    <% include ../partials/footer%>
+    <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript -->
   </body>
 </html>
