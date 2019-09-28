@@ -12,4 +12,8 @@ router.get("/usuario", (req, res) => {
   res.render('pages/usuario')
 })
 
+router.get("/abogado", (req, res) => {
+  res.render('pages/vistaAbogado')
+})
+
 module.exports = router;
