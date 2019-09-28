@@ -5,5 +5,7 @@ const router = express.Router()
 //const db = require('Bd')
 
 router.get('/', (req, res) => {
-  res.render('server/views/pages/index.ejs')
+  res.render('pages/index')
 })
+
+module.exports = router;

@@ -24,10 +24,12 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }))
+
 // defincion de archivos publicos del servidor
 app.use(express.static('public'))
 // agregador de rutas al server
 app.use('/', routes)
+
 
 const port = process.env.PORT || 3000
 app.listen(port, (err) => {
