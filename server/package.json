@@ -1,0 +1,24 @@
+{
+  "name": "Voitea",
+  "version": "1.0.0",
+  "description": "Aplicativo web que permite la fácil cominicación entre personas y abogados que necesiten sus servicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandro2134/Voitea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandro2134/Voitea/issues"
+  },
+  "homepage": "https://github.com/Alejandro2134/Voitea#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
