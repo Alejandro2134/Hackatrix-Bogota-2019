@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/Alejandro2134/Voitea#readme",
   "dependencies": {
+    "Bd": "file:../Bd",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "mysql": "^2.17.1",
-    "Bd": "file:../Bd"
+    "mysql": "^2.17.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.2",
